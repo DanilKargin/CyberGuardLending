@@ -28,8 +28,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-dark);
             color: var(--text-white);
+            background-color: var(--white);
             overflow-x: hidden;
         }
 
@@ -43,10 +43,18 @@
             gap: 2rem;
             min-height: 80vh;
             position: relative;
+        
+        }
+
+        .main-block {
+            background-color: var(--bg-dark);
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
         }
 
         .logo {
             position: absolute;
+            font-size: 18px;
             top: 2rem;
             left: 2rem;
             display: flex;
@@ -97,7 +105,7 @@
             flex: 1;
             position: relative;
             display: flex;
-            justify-content: center;
+            justify-content: right;
         }
 
         /* CSS Shield Graphic */
@@ -142,7 +150,6 @@
 
         /* --- Pain Points Section --- */
         .pain-points {
-            background-color: var(--bg-dark);
             padding: 4rem 2rem;
             text-align: center;
         }
@@ -272,11 +279,60 @@
             margin-top: 5px;
             display: block;
         }
+        
+        /* Chat Input Styles */
+        .chat-input-container {
+            padding: 1rem;
+            border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 25px;
+            outline: none;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input:focus {
+            border-color: var(--primary);
+        }
+
+        .send-button {
+            background: var(--primary);
+            color: var(--bg-dark);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .send-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        .send-button:active {
+            transform: scale(0.95);
+        }
 
         /* --- Features Grid --- */
         .features-grid {
+            padding-top: 25px;
             background-color: var(--bg-dark);
-            padding: 5rem 2rem;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
             text-align: center;
         }
 
@@ -330,64 +386,62 @@
     </style>
 </head>
 <body>
-
-    <!-- Header / Hero -->
-    <header>
-        <div class="logo">
-            <i class="fa-solid fa-shield-halved" style="color: var(--primary);"></i>
-            Cyber-Guard
-        </div>
-
-        <div class="hero-content">
-            <h1>Cyber-Guard: AI Shield for Your Digital Safety</h1>
-            <p class="hero-subtitle">Real-time AI analysis of links and messages blocks phishing scams instantly on your devices.</p>
-            <a href="#" class="cta-button">Start Free</a>
-        </div>
-
-        <div class="hero-visual">
-            <div class="shield-container">
-                <div class="phone-base"></div>
-                <i class="fa-solid fa-shield-halved shield-icon"></i>
-                <i class="fa-solid fa-check check-mark"></i>
+    <div class="main-block">
+        <!-- Header / Hero -->
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved" style="color: var(--primary);"></i>
+                Cyber-Guard
             </div>
-        </div>
-    </header>
 
-    <!-- Pain Points -->
-    <section class="pain-points">
-        <h2 class="section-title">Pain Points Section</h2>
-        <div class="cards-container">
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fa-solid fa-code"></i>
-                    <i class="fa-solid fa-triangle-exclamation" style="position: absolute; font-size: 1.5rem; right: -5px; bottom: -5px; color: #ef4444;"></i>
+            <div class="hero-content">
+                <h1>Cyber-Guard: AI Shield for Your Digital Safety</h1>
+                <p class="hero-subtitle">Real-time AI analysis of links and messages blocks phishing scams instantly on your devices.</p>
+                <a href="https://vk.com/video52602393_165245411" class="cta-button">Start Free</a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="shield-container">
+                    <div class="phone-base"></div>
+                    <i class="fa-solid fa-shield-halved shield-icon"></i>
+                    <i class="fa-solid fa-check check-mark"></i>
                 </div>
-                <h3>Suspicious Links</h3>
             </div>
-            <!-- Card 2 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fa-solid fa-store"></i>
-                </div>
-                <h3>Fake Shop Alerts</h3>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fa-solid fa-envelope"></i>
-                    <i class="fa-solid fa-triangle-exclamation" style="position: absolute; font-size: 1.5rem; right: -5px; bottom: -5px; color: #ef4444;"></i>
-                </div>
-                <h3>Phishing Emails</h3>
-            </div>
-        </div>
-    </section>
+        </header>
 
+        <!-- Pain Points -->
+        <section class="pain-points">
+            <h2 class="section-title">Pain Points Section</h2>
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Suspicious Links</h3>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3>Fake Shop Alerts</h3>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Phishing Emails</h3>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- Solution Section -->
     <section class="solution-section">
         <h2 class="section-title" style="color: var(--bg-dark);">Solution Section</h2>
         <div class="solution-container">
-            <div class="chat-mockup">
+            <div class="chat-mockup" id="chatMockup">
                 <div class="chat-header">
                     <i class="fa-brands fa-telegram" style="color: #229ED9; font-size: 1.5rem;"></i>
                     <div>
@@ -395,7 +449,7 @@
                         <span style="font-size: 0.8rem; color: #64748b;">Bot</span>
                     </div>
                 </div>
-                <div class="chat-body">
+                <div class="chat-body" id="chatBody">
                     <div class="message msg-sent">
                         https://example-scam-site.com
                     </div>
@@ -410,6 +464,13 @@
                             <p style="font-size: 0.75rem; color: #64748b; margin-top: 5px;">Analysis details: Found on known malicious list, unusual redirection pattern.</p>
                         </div>
                     </div>
+                </div>
+                <!-- Chat Input -->
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="chatInput" placeholder="Type a message or link to check..." autocomplete="off">
+                    <button class="send-button" id="sendButton">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -439,6 +500,94 @@
             </div>
         </div>
     </section>
+    
+    <script>
+        // Chat functionality
+        const chatInput = document.getElementById('chatInput');
+        const sendButton = document.getElementById('sendButton');
+        const chatBody = document.getElementById('chatBody');
 
+        // Function to add message to chat
+        function addMessage(text, isSent = true) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isSent ? 'msg-sent' : 'msg-received'}`;
+            messageDiv.textContent = text;
+            chatBody.appendChild(messageDiv);
+
+            // Scroll to bottom
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+            return messageDiv;
+        }
+
+        // Function to add bot response
+        function addBotResponse(userMessage) {
+            setTimeout(() => {
+                // Check if message contains a link
+                const urlPattern = /(https?:\/\/[^\s]+)/g;
+                const hasLink = urlPattern.test(userMessage);
+
+                if (hasLink) {
+                    // Extract link from message
+                    const link = userMessage.match(urlPattern)[0];
+
+                    const botMessageDiv = document.createElement('div');
+                    botMessageDiv.className = 'message msg-received';
+                    botMessageDiv.innerHTML = `
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                            <i class="fa-solid fa-robot" style="color: var(--primary);"></i>
+                            <strong>Cyber-Guard Analysis:</strong>
+                        </div>
+                        <div class="analysis-box">
+                            Analyzing link: <strong>${link}</strong><br><br>
+                            <span style="color: #16a34a; font-weight: bold;">✓ Link appears to be safe</span><br>
+                            <span style="font-size: 0.75rem; color: #64748b; margin-top: 5px;">Threat Level: Low<br>No malicious patterns detected.</span>
+                        </div>
+                    `;
+                    chatBody.appendChild(botMessageDiv);
+                } else {
+                    // Regular bot response
+                    const responses = [
+                        "I'm here to help protect you! Send me any link to check if it's safe.",
+                        "You can send me URLs, and I'll analyze them for phishing attempts.",
+                        "Cyber-Guard is always watching! What would you like me to check?",
+                        "I can analyze links in real-time. Just paste a URL!"
+                    ];
+                    const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+                    addMessage(randomResponse, false);
+                }
+
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }, 1000);
+        }
+
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+
+            if (message) {
+                // Add user message
+                addMessage(message, true);
+
+                // Clear input
+                chatInput.value = '';
+
+                // Add bot response
+                addBotResponse(message);
+            }
+        }
+
+        // Event listeners
+        sendButton.addEventListener('click', sendMessage);
+
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Focus input on load
+        chatInput.focus();
+    </script>
 </body>
 </html>
