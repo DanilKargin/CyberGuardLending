@@ -391,13 +391,13 @@
         <header>
             <div class="logo">
                 <i class="fa-solid fa-shield-halved" style="color: var(--primary);"></i>
-                Cyber-Guard
+                Кибер-Защитник
             </div>
 
             <div class="hero-content">
-                <h1>Cyber-Guard: AI Shield for Your Digital Safety</h1>
-                <p class="hero-subtitle">Real-time AI analysis of links and messages blocks phishing scams instantly on your devices.</p>
-                <a href="https://vk.com/video52602393_165245411" class="cta-button">Start Free</a>
+                <h1>Кибер-Защитник: ИИ Защита для вашей цифровой безопасности</h1>
+                <p class="hero-subtitle">Искусственный интеллект анализирует ссылки и сообщения в режиме реального времени, мгновенно блокирует фишинговые атаки.</p>
+                <a href="#" class="cta-button">Начать</a>
             </div>
 
             <div class="hero-visual">
@@ -418,21 +418,21 @@
                     <div class="card-icon">
                         <i class="fa-solid fa-code"></i>
                     </div>
-                    <h3>Suspicious Links</h3>
+                    <h3>Подозрительные ссылки</h3>
                 </div>
                 <!-- Card 2 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fa-solid fa-store"></i>
                     </div>
-                    <h3>Fake Shop Alerts</h3>
+                    <h3>Фишинговые сайты</h3>
                 </div>
                 <!-- Card 3 -->
                 <div class="card">
                     <div class="card-icon">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <h3>Phishing Emails</h3>
+                    <h3>Фишинговые письма</h3>
                 </div>
             </div>
         </section>
@@ -456,18 +456,18 @@
                     <div class="message msg-received">
                         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
                             <i class="fa-solid fa-robot" style="color: var(--primary);"></i>
-                            <strong>Cyber-Guard Analysis:</strong>
+                            <strong>Анализ Кибер-Защитника:</strong>
                         </div>
                         <div class="analysis-box">
-                            This link is strongly associated with phishing activity. Do not open!
-                            <span class="threat-level">Threat Level: High.</span>
-                            <p style="font-size: 0.75rem; color: #64748b; margin-top: 5px;">Analysis details: Found on known malicious list, unusual redirection pattern.</p>
+                            Эта ссылка явно связана с фишинговой активностью. Не открывать!
+                            <span class="threat-level">Уровень угрозы: Высокий.</span>
+                            <p style="font-size: 0.75rem; color: #64748b; margin-top: 5px;">Подробности анализа: Обнаружен в списке известных вредоносных программ, необычная схема перенаправления.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Chat Input -->
                 <div class="chat-input-container">
-                    <input type="text" class="chat-input" id="chatInput" placeholder="Type a message or link to check..." autocomplete="off">
+                    <input type="text" class="chat-input" id="chatInput" placeholder="Введите сообщение или ссылку для проверки..." autocomplete="off">
                     <button class="send-button" id="sendButton">
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
@@ -483,20 +483,20 @@
             <!-- Feature 1 -->
             <div class="feature-item">
                 <i class="fa-solid fa-shield-cat feature-icon-large"></i>
-                <h3>Background Protection</h3>
-                <p>Continuous shield on and misuse background protection.</p>
+                <h3>Фоновая защита</h3>
+                <p>Защита без необходимости открывать отдельные приложения.</p>
             </div>
             <!-- Feature 2 -->
             <div class="feature-item">
                 <i class="fa-regular fa-lightbulb feature-icon-large"></i>
-                <h3>Educational Insights</h3>
-                <p>Learn how bots, lorrenng, and educational insights.</p>
+                <h3>Образовательные идеи</h3>
+                <p>Решение объясняет почему тот или иной контент подозрителен, повышая цифровую грамотность.</p>
             </div>
             <!-- Feature 3 -->
             <div class="feature-item">
                 <i class="fa-solid fa-layer-group feature-icon-large"></i>
-                <h3>Multi-platform Support</h3>
-                <p>Support multi-prothene, snuols, iOS, Android, and and web.</p>
+                <h3>Кроссплатформенность</h3>
+                <p>Поддержка кросслпатформенности: iOS, Android и Web.</p>
             </div>
         </div>
     </section>
@@ -536,22 +536,22 @@
                     botMessageDiv.innerHTML = `
                         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
                             <i class="fa-solid fa-robot" style="color: var(--primary);"></i>
-                            <strong>Cyber-Guard Analysis:</strong>
+                            <strong>Анализ Кибер-Защитника:</strong>
                         </div>
                         <div class="analysis-box">
                             Analyzing link: <strong>${link}</strong><br><br>
-                            <span style="color: #16a34a; font-weight: bold;">✓ Link appears to be safe</span><br>
-                            <span style="font-size: 0.75rem; color: #64748b; margin-top: 5px;">Threat Level: Low<br>No malicious patterns detected.</span>
+                            <span style="color: #16a34a; font-weight: bold;">✓ Ссылка, по-видимому, безопасна</span><br>
+                            <span style="font-size: 0.75rem; color: #64748b; margin-top: 5px;">Уровень угрозы: Низкий<br>Вредоносных шаблонов не обнаружено.</span>
                         </div>
                     `;
                     chatBody.appendChild(botMessageDiv);
                 } else {
                     // Regular bot response
                     const responses = [
-                        "I'm here to help protect you! Send me any link to check if it's safe.",
-                        "You can send me URLs, and I'll analyze them for phishing attempts.",
-                        "Cyber-Guard is always watching! What would you like me to check?",
-                        "I can analyze links in real-time. Just paste a URL!"
+                        "Я здесь, чтобы помочь защитить вас! Пришлите мне любую ссылку, чтобы проверить, безопасна ли она.",
+                        "Вы можете прислать мне URL-адреса, и я проанализирую их на предмет попыток фишинга.",
+                        "Кибер-Защитник всегда начеку! Что бы вы хотели, чтобы я проверил?",
+                        "Я могу анализировать ссылки в режиме реального времени. Просто вставьте URL!"
                     ];
                     const randomResponse = responses[Math.floor(Math.random() * responses.length)];
                     addMessage(randomResponse, false);
